@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/upload.css') }}">
+
+  <!-- ===== Title ===== -->
+  <title>Upload excel file</title>
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='mini_logo.png')}}" defer>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+</head>
+
+<body>
+  
+  <div class="split left">
+    <div class="centered_left">
+      <img src="{{url_for('static', filename='logo.png')}}" alt="logo">
+    </div>
+  </div>
+
+  <div class="split right">
+
+    <div class="sign-out">
+      <span class="text"><a href="logout" class="text signout">Sign out</a></span>
+    </div>
+
+    <div class="centered">
+      <div class="admin_container">
+        <form method="get" action="file.doc"></form>
+        <div class="table-area">
+
+          <table id="table">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="select-all"></th>
+                <th colspan="2">File Name</th>
+                <th>Operator</th>
+                <th>Date</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+        <div class="admin_lower_container">
+          <button class="history_button" type="submit" onclick="window.location.href='admin-history'">Previously
+            Aggregated</button>
+          <button class="download_button" type="submit" onclick="download_button()">Download
+            All</button>
+          <button class="aggergate_button" type="submit" onclick="aggregate_button()">Aggregate
+            All</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename= 'scripts/admin.js') }}"></script>
+  <script>
+    filesArea = document.querySelector(".admin_container")
+    function download_button(){
+      console.log("Here we download all files")
+      try{
+        window.location.href = '/download_files'
+      }catch (error){
+        console.error(error);
+      }
+    }
+    
+    function aggregate_button(){
+      filesArea = document.querySelector(".centered")
+      console.log("Yes done")
+      filesArea.innerHTML = `
+      <div class="upload_container">
+        <div class="response_box">
+          <div class="file-area">
+            </br><div class="load_icon"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+            </br><header>Processing...</header>     
+          </div>
+        </div>
+      </div>`;
+      setTimeout(function(){
+        console.log('Timeout function')
+        try{
+          fetch('/get_combined')
+        } catch (error){
+          console.error(error);
+        }
+        window.location.href='success_admin';
+      }, 2000);
+    }
+  </script>
+
+</body>
+
+</html>

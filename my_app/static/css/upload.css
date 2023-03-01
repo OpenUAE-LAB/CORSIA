@@ -1,0 +1,531 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+}
+
+.upload_container {
+  text-align: center;
+  position: relative;
+  /* max-width: 600px; */
+  /* left: -30%; */
+  height: 480px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* margin: 20px; */
+}
+
+.admin_container {
+  text-align: center;
+  position: relative;
+  /* max-width: 600px; */
+  /* left: -30%; */
+  height: 600px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* margin: 20px; */
+}
+
+.error_container {
+  text-align: center;
+  position: relative;
+  /* max-width: 600px; */
+  /* left: -30%; */
+  height: 550px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* margin: 20px; */
+}
+
+.table-area{
+  /* margin: 200px; */
+  width: 700px;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 515px;
+}
+
+.table-area-error{
+  /* margin: 200px; */
+  width: 700px;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.box {
+  background-color: #5c5c5c;
+  padding: 20px;
+  height: 300px;
+  border-radius: 10px;
+  /* border: 0.5px solid rgba(130, 130, 130, 0.25); */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  margin-right: 400px;
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #015B24;
+  border-radius: 25px;
+}
+
+.drag-area {
+  border: 2px dashed rgb(57, 57, 57);
+  height: 380px;
+  width: 580px;
+  background-color: #efefef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 35px;
+  margin-bottom: 10px;
+  
+}
+
+.response_box {
+  height: 400px;
+  width: 580px;
+  background-color: #efefef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 35px;
+  margin-bottom: 10px;
+}
+
+.checkmark_response{
+  border-radius:150px;
+  height:150px; 
+  width:150px; 
+  background: #015B24; 
+  margin:0 auto;
+  padding-top: 20px;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.checkmark_response_error{
+  border-radius:50px;
+  height:50px; 
+  width:50px; 
+  background: #BE0E1A; 
+  margin-left:10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float:left;
+  padding-top: 5px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.error_heading{
+  float:left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.error_heading_small{
+  float:left;
+  margin-left: 20px;
+  margin-top:-5px;
+}
+
+.icon {
+  font-size: 100px;
+  color: #303030;
+  
+}
+
+.load_icon {
+  font-size: 25px;
+  color: #303030;
+  margin-top: 20px;
+}
+
+header {
+  font-size: 25px;
+  font-weight: 500;
+  color: #303030;
+}
+
+.drag-area span {
+  font-size: 20px;
+  font-weight: 350;
+  color: #303030;
+  margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #015B24;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.sign-out {
+  position: absolute;
+  right: 15px;
+}
+
+.sign-out .text {
+  color: #015B24;
+  font-size: 14px;
+}
+
+.sign-out a.text {
+  color: #333;
+  text-decoration: none;
+}
+
+.sign-out a:hover {
+  text-decoration: underline;
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+/* Style the image inside the centered container, if needed */
+.centered_left img {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.form .upload-validate {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.validate-link {
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #BE0E1A;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:500px;
+  margin-top: 1px;
+}
+
+.icon-text{
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.btn-cancel{
+  color: #BE0E1A;
+  margin-left:525px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.btn-cancel:hover {
+  color: #69080e;
+}
+
+.btn_cancel_upload{
+  color: #BE0E1A;
+  text-decoration: none;
+}
+
+a:visited .btn_cancel{ 
+  text-decoration: none; 
+  color: #BE0E1A; 
+ }
+
+.confirm_uploading{
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  margin-right: 490px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#table {
+  border-collapse: collapse;
+  overflow:scroll;
+  width: 100%;
+}
+
+#table td, #table th {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  text-align: left;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  border-bottom: 2px solid rgb(202, 201, 201);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(45, 45, 45);
+}
+
+
+#table-uploaded{
+  border-collapse: collapse;
+  overflow:scroll;
+  width: 100%;
+}
+
+
+#table-uploaded td, #table-uploaded th {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  text-align: left;
+}
+
+#table-uploaded tr:nth-child(even){background-color: #f2f2f2;}
+
+#table-uploaded tr:hover {background-color: #ddd;}
+
+#table-uploaded th {
+  border-bottom: 2px solid rgb(202, 201, 201);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(45, 45, 45);
+}
+
+
+.admin_lower_container{
+  margin-top: 18px;
+}
+
+.admin_lower_container_error{
+  margin-top: 18px;
+  margin-left: 500px;
+}
+
+.history_button{
+  /* margin-right: 480px; */
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  border: 2px solid black;
+  border-color: #BE0E1A;
+  background: #ffffff;
+  color: #BE0E1A;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download_button{
+  /* margin-left: 360px;*/
+  margin-right: 175px; 
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  border: 2px solid black;
+  border-color: #BE0E1A;
+  background: #ffffff;
+  color: #BE0E1A;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download_button_h{
+  margin-right: 202px; 
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  border: 2px solid black;
+  border-color: #BE0E1A;
+  background: #ffffff;
+  color: #BE0E1A;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aggergate_button{
+  /* margin-right: 360px; */
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background: #BE0E1A;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download_button:hover {
+  background: #BE0E1A;
+  color: white;
+}
+
+.download_button_h:hover {
+  background: #BE0E1A;
+  color: white;
+}
+
+
+.aggergate_button:hover {
+  background: #ad0d18;
+  color: white;
+}
+
+.history_button:hover {
+  background: #BE0E1A;
+  color: white;
+}
+
+.cancel_aggergate_button{
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 35px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid black;
+  border-color: #303030;
+  background: #ffffff;
+  color: #303030;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancel_aggergate_button:hover {
+  background: #303030;
+  color: white;
+}
+
+.success_admin_button{
+  padding: 10px 45px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #BE0E1A;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#excel_icon{
+  font-size: 30px; 
+  /* color:#848484; */
+  color: #34784F;
+}
+
+#excel_icon_old{
+  font-size: 30px; 
+  /* color:#848484; */
+  color: #787979;
+}
+
+.icon_download_button{
+  all: unset;
+  cursor: pointer;
+}
+.icon_download_button:hover {
+  outline: #787979 5px auto;
+}
+
+.link_main {
+  color: #333;
+  text-decoration: underline;
+}
+
+.link_main a:hover {
+  text-decoration: underline;
+}

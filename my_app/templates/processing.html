@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/upload.css') }}">
+
+  <!-- ===== Title ===== -->
+  <title>Upload excel file</title>
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='mini_logo.png')}}">
+
+  <script>
+    function delay() {window.location = "success_admin";}
+  </script>
+  
+</head>
+
+<body onLoad = "setTimeout('delay()', 5000)">
+ 
+  <div class="split left">
+    <div class="centered_left">
+      <img src="{{url_for('static', filename='logo.png')}}" alt="logo">
+    </div>
+  </div>
+
+  <div class="split right">
+    
+    <div class="sign-out">
+      <span class="text"><a href="logout" class="text signout">Sign out</a></span>
+    </div>
+
+  <div class="centered">
+    <div class="upload_container">
+      <div class="response_box">
+        <form action="#">
+          </br><div class="load_icon"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+          </br><header>Processing...</header>     
+          </br><input type="button" value="Cancel" class="cancel_aggergate_button" onclick = "window.location.href='admin'">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!-- <script type="text/javascript" src='scripts/upload.js' defer></script> -->
+
+</body>
+
+</html>

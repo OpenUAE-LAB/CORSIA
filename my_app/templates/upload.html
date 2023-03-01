@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/upload.css') }}" defer>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- ===== Title ===== -->
+  <title>Upload excel file</title>
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='mini_logo.png')}}">
+
+</head>
+
+<body>
+  
+  <div class="split left">
+    <div class="centered_left">
+      <img src="{{url_for('static', filename='logo.png')}}" alt="logo">
+    </div>
+  </div>
+
+  <div class="split right">
+    
+    <div class="sign-out">
+      <span class="text"><a href="logout" class="text signout">Sign out</a></span>
+    </div>
+
+    <div class="centered">
+      <div class="upload_container">
+        <div class="drag-area">
+          <!-- <form action="#"> -->
+
+            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <header>Drag & Drop to Upload File</header>
+            <span>OR<br></span>
+            
+            <button class="browse_button"> Browse Excel</button>
+            <input type="file" hidden>
+            
+          <!-- </form> -->
+
+        </div>
+
+        <div class="upload-validate">
+          <!-- validate button will be here once file uploaded-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename= 'scripts/upload.js') }}"></script>
+
+</body>
+
+</html>
