@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename= 'css/upload.css') }}">
 
   <!-- ===== Title ===== -->
-  <title>Upload excel file</title>
+  <title>Admin Page</title>
   <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='mini_logo.png')}}" defer>
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -44,29 +44,12 @@
                 <th><input type="checkbox" id="select-all"></th>
                 <th colspan="2">File Name</th>
                 <th>Operator</th>
-                <th class="date">Date</th>
+                <th>Date</th>
+                <th></th>
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" class="checkbox"></td>
-                <td style="text-align: center;"><i class="fa fa-file-excel" aria-hidden="true" id="excel_icon_old"></i>
-                </td>
-                <td>Operator 1.xlsx </br> 16 KB.xlsx</td>
-                <td>Operator 1</td>
-                <td id="date-column">29/1/2023 </br> 19:00</td>
-                <td><button class="icon_download_button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="checkbox"></td>
-                <td style="text-align: center;"><i class="fa fa-file-excel" aria-hidden="true" id="excel_icon_old"></i>
-                </td>
-                <td>Operator 2.xlsx </br> 16 KB.xlsx</td>
-                <td>Operator 2</td>
-                <td id="date-column">2/2/2023 </br> 24:00</td>
-                <td><button class="icon_download_button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button></td>
-              </tr>
+            <tbody id="table-body">
             </tbody>
           </table>
           </br>
@@ -74,9 +57,10 @@
         <div class="admin_lower_container">
           <button class="history_button" type="submit" onclick="window.location.href='admin'">Recently
             Uploaded</button>
-          <button class="download_button_h" type="submit" onclick="">Download
+            <!-- The two buttons below downloads the selected files not ALL -->
+          <button class="download_button_h" id="btn1" type="submit">Download
             All</button>
-          <button class="aggergate_button" type="submit" onclick="">Aggregate
+          <button class="aggergate_button" id="btn" type="submit" onclick="">Aggregate
             All</button>
         </div>
         </form>
@@ -87,6 +71,7 @@
   <!-- partial -->
   <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename= 'scripts/admin-history.js') }}"></script>
   <!-- <script type="text/javascript" src='scripts/admin.js'></script> -->
   
 </body>

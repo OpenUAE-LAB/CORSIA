@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename= 'css/upload.css') }}">
 
   <!-- ===== Title ===== -->
-  <title>Upload excel file</title>
+  <title>Admin Page</title>
   <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='mini_logo.png')}}" defer>
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -38,7 +38,6 @@
       <div class="admin_container">
         <form method="get" action="file.doc"></form>
         <div class="table-area">
-
           <table id="table">
             <thead>
               <tr>
@@ -59,7 +58,7 @@
             Aggregated</button>
           <button class="download_button" type="submit" onclick="download_button()">Download
             All</button>
-          <button class="aggergate_button" type="submit" onclick="aggregate_button()">Aggregate
+          <button class="aggergate_button" id="btn" type="submit" onclick="aggregate_button()">Aggregate
             All</button>
         </div>
         </form>
@@ -73,6 +72,7 @@
   <script src="{{ url_for('static', filename= 'scripts/admin.js') }}"></script>
   <script>
     filesArea = document.querySelector(".admin_container")
+    
     function download_button(){
       console.log("Here we download all files")
       try{

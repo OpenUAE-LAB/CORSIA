@@ -137,7 +137,6 @@ function pythonSend(){
     } catch (error) {
       console.error(error);
     }
-    // window.location.href = "/validate_response";
   }, 1000);
 }
 

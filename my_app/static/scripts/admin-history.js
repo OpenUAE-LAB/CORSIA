@@ -55,7 +55,7 @@ function fileSize(size){
 function display_files(){
     tbody.innerHTML = "";
     try{
-        fetch('/file_info').then(response => response.json()).then(data => {
+        fetch('/file_info_previously').then(response => response.json()).then(data => {
             for(file in data){
                 fInfo = data[file];
                 
@@ -65,12 +65,11 @@ function display_files(){
                 // Filling up the row
                 trCell = tr.insertCell(-1);
                 trCell.appendChild(createNewCheckbox(file))
-                trCell.createNewCheckboxt
-                trCell.innerHTML = `<td><input type="checkbox" class="checkbox"></td>`
+                // trCell.innerHTML = `<td><input type="checkbox" class="checkbox"></td>`
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = `<td style="text-align: center;"><i class="fa fa-file-excel" aria-hidden="true"
-                id="excel_icon"></i></td>`
+                id="excel_icon_old"></i></td>`
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = file;
@@ -91,6 +90,7 @@ function display_files(){
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)"></i></button></td>`;
+                // trCell.innerHTML = `<td><button class="icon_delete_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)></i></button></td>`;
             }
         })
     } catch (error){
@@ -104,6 +104,63 @@ function createNewCheckbox(name){
     checkbox.name = name;
     // checkbox.id = id;
     return checkbox;
+}
+
+document.getElementById('btn').onclick = function() {
+    // Collect the name of all the files selected (name format e.g operator1.xlsx is returned)
+    let files = [];
+    let formData = new FormData();
+    var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked'); // Collects all checked checkboxes
+    
+    // Creating a formData with all the files checked
+    for (var checkbox of markedCheckbox) {
+        formData.append('fileslist', checkbox.name);
+    }
+
+    // Displaying a load page
+    filesArea = document.querySelector(".centered")
+    filesArea.innerHTML = `
+    <div class="upload_container">
+        <div class="response_box">
+            <div class="file-area">
+                </br><div class="load_icon"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                </br><header>Processing...</header>     
+            </div>
+        </div>
+    </div>`;
+
+
+    // Sending a fetch to combine selected files only
+    setTimeout(function(){
+    try{
+        fetch('/combine_selected', {
+            method: 'POST',
+            body: formData,
+        })
+    } catch (error){
+        console.error(error);
+    }
+    window.location.href='success_admin';
+    }, 2000);
+}
+
+document.getElementById('btn1').onclick = function(){
+
+    // Collect the names of all the files selected
+    let files = [];
+    let formData = new FormData();
+    var markedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let link = document.createElement('a');
+    link.href = '/download_file/';
+
+    // Creating a formData with all files selected
+    for (var checkbox of markedCheckboxes){
+        link.href = '/download_file/' + checkbox.name;
+        // link.download = checkbox.name;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 }
 
 
