@@ -90,7 +90,9 @@ function display_files(){
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)"></i></button></td>`;
-                // trCell.innerHTML = `<td><button class="icon_delete_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)></i></button></td>`;
+                
+                trCell = tr.insertCell(-1);
+                trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-undo" aria-hidden="true"></i></button></td>`;
             }
         })
     } catch (error){
@@ -102,6 +104,7 @@ function createNewCheckbox(name){
     var checkbox = document.createElement('input'); 
     checkbox.type= 'checkbox';
     checkbox.name = name;
+    checkbox.classList.add('ckb');
     // checkbox.id = id;
     return checkbox;
 }

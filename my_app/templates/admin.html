@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  
+
   <div class="split left">
     <div class="centered_left">
       <img src="{{url_for('static', filename='logo.png')}}" alt="logo">
@@ -70,19 +70,20 @@
   <script src='https://use.fontawesome.com/releases/v5.0.10/js/all.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="{{ url_for('static', filename= 'scripts/admin.js') }}"></script>
+
   <script>
     filesArea = document.querySelector(".admin_container")
-    
-    function download_button(){
+
+    function download_button() {
       console.log("Here we download all files")
-      try{
+      try {
         window.location.href = '/download_files'
-      }catch (error){
+      } catch (error) {
         console.error(error);
       }
     }
-    
-    function aggregate_button(){
+
+    function aggregate_button() {
       filesArea = document.querySelector(".centered")
       console.log("Yes done")
       filesArea.innerHTML = `
@@ -94,18 +95,23 @@
           </div>
         </div>
       </div>`;
-      setTimeout(function(){
+      setTimeout(function () {
         console.log('Timeout function')
-        try{
+        try {
           fetch('/get_combined')
-        } catch (error){
+        } catch (error) {
           console.error(error);
         }
-        window.location.href='success_admin';
+        window.location.href = 'success_admin';
       }, 2000);
     }
+
+
+
+
   </script>
 
+  <script src="{{ url_for('static', filename= 'scripts/admin_2.js') }}"></script>
 </body>
 
 </html>
