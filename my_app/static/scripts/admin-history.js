@@ -64,8 +64,7 @@ function display_files(){
 
                 // Filling up the row
                 trCell = tr.insertCell(-1);
-                trCell.appendChild(createNewCheckbox(file))
-                // trCell.innerHTML = `<td><input type="checkbox" class="checkbox"></td>`
+                trCell.appendChild(createNewCheckbox(file));
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = `<td style="text-align: center;"><i class="fa fa-file-excel" aria-hidden="true"
