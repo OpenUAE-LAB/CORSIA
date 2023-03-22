@@ -28,7 +28,6 @@ function downloadFile(button) {
     // Get the name of the file from the table row
     var text = button.parentNode.parentNode.parentNode.cells[2].textContent;
     var fileName = text.split('.Xlsx')[0];
-    console.log(fileName);
 
     // Construct the URL for the file download
     var url = "/download_file/" + encodeURIComponent(fileName);
@@ -67,8 +66,6 @@ function display_files() {
                 // Filling up the row
                 trCell = tr.insertCell(-1);
                 trCell.appendChild(createNewCheckbox(file))
-                // trCell.createNewCheckboxt
-                // trCell.innerHTML = `<td><input type="checkbox" class="checkbox_"></td>`
 
                 trCell = tr.insertCell(-1);
                 trCell.innerHTML = `<td style="text-align: center;"><i class="fa fa-file-excel" aria-hidden="true"

@@ -1,446 +1,1011 @@
 From,To,CO2 Emissions (tonnes of CO2)
-afghanistan,china,2108
-afghanistan,united arab emirates,2110
-algeria,spain,2112
-algeria,united arab emirates,2114
-angola,senegal,2116
-angola,united arab emirates,2118
-argentina,brazil,2120
-australia,indonesia,2122
-australia,malaysia,2124
-australia,new zealand,2126
-australia,oman,2128
-australia,singapore,2130
-australia,thailand,2132
-australia,united arab emirates,4270
-australia,united states,2138
-australia,viet nam,2140
-austria,united arab emirates,2142
-austria,united kingdom,2144
-bahrain,italy,2146
-bahrain,saudi arabia,2148
-bahrain,united arab emirates,2150
-bangladesh,china,2152
-bangladesh,india,2154
-bangladesh,united arab emirates,2156
-belgium,czechia,2158
-belgium,norway,2160
-belgium,spain,2162
-belgium,united arab emirates,2164
-belgium,united states,2166
-benin,nigeria,2168
-brazil,argentina,2170
-brazil,chile,2172
-brazil,colombia,2174
-brazil,ecuador,2176
-brazil,saudi arabia,2178
-brazil,united arab emirates,2180
-brunei darussalam,china,2182
-bulgaria,united arab emirates,2184
-burkina faso,ghana,2186
-burkina faso,senegal,2188
-burundi,kenya,2190
-cambodia,china,2192
-cambodia,myanmar,2194
-cambodia,thailand,2196
-cambodia,united arab emirates,2198
-cameroon,ghana,2200
-cameroon,nigeria,2202
-canada,china,2204
-canada,united arab emirates,2206
-canada,united kingdom,2208
-chile,brazil,2210
-chile,senegal,2212
-china,bangladesh,2214
-china,india,2216
-china,oman,2218
-china,thailand,2220
-china,united arab emirates,2222
-colombia,ecuador,2224
-colombia,united states,2226
-congo,angola,2228
-croatia,united arab emirates,2234
-cyprus,malta,2236
-cyprus,united arab emirates,2238
-czechia,united arab emirates,2240
-czechia,united kingdom,2242
-côte d'ivoire,germany,2230
-côte d'ivoire,ghana,2232
-denmark,austria,2244
-denmark,bahrain,2246
-denmark,germany,2248
-denmark,kuwait,2250
-denmark,senegal,2252
-denmark,united arab emirates,2254
-denmark,united states,2256
-djibouti,ethiopia,2258
-djibouti,kenya,2260
-djibouti,saudi arabia,2262
-djibouti,sudan,2264
-djibouti,united arab emirates,2266
-ecuador,mexico,2268
-ecuador,netherlands,2270
-ecuador,united states,2272
-egypt,germany,2274
-egypt,netherlands,2276
-egypt,united arab emirates,2278
-ethiopia,kenya,2280
-ethiopia,saudi arabia,2282
-ethiopia,united arab emirates,2284
-finland,russian federation,2286
-france,austria,2288
-france,germany,2290
-france,italy,2292
-france,niger,2294
-france,united arab emirates,2296
-germany,bahrain,2298
-germany,denmark,2300
-germany,ireland,2302
-germany,mexico,2304
-germany,netherlands,2306
-germany,saudi arabia,2308
-germany,spain,2310
-germany,switzerland,2312
-germany,united arab emirates,2314
-germany,united kingdom,2316
-ghana,brazil,2318
-ghana,côte d'ivoire,2320
-ghana,germany,2322
-ghana,spain,2324
-ghana,united arab emirates,2326
-greece,germany,2328
-greece,nigeria,2330
-greece,united arab emirates,2332
-greece,united kingdom,2334
-greece,united states,2336
-guinea,senegal,2338
-hungary,united arab emirates,2340
-iceland,united states,2342
-india,china,2344
-india,denmark,2346
-india,japan,2348
-india,maldives,2350
-india,thailand,2352
-india,united arab emirates,2354
-indonesia,australia,2356
-indonesia,india,2358
-indonesia,new zealand,2360
-indonesia,singapore,2362
-indonesia,united arab emirates,2364
-iran (islamic republic of),united arab emirates,2386
-iraq,belgium,2366
-iraq,cyprus,2368
-iraq,denmark,2370
-iraq,germany,2372
-iraq,netherlands,2374
-iraq,norway,2376
-iraq,spain,2378
-iraq,united arab emirates,2380
-ireland,united arab emirates,2382
-ireland,united kingdom,2384
-italy,bahrain,2388
-italy,france,2390
-italy,switzerland,2392
-italy,united arab emirates,2394
-italy,united kingdom,2396
-italy,united states,2398
-japan,china,2400
-japan,oman,2402
-japan,united arab emirates,2404
-japan,viet nam,2406
-jordan,germany,2408
-jordan,saudi arabia,2410
-jordan,spain,2412
-jordan,united arab emirates,2414
-kazakhstan,republic of korea,2416
-kazakhstan,united arab emirates,2418
-kenya,belgium,2420
-kenya,netherlands,2422
-kenya,saudi arabia,2424
-kenya,seychelles,2426
-kenya,singapore,2428
-kenya,uganda,2430
-kenya,united arab emirates,2432
-kuwait,hungary,2434
-kuwait,iraq,2436
-kuwait,united arab emirates,2438
-lebanon,bahrain,2440
-lebanon,united arab emirates,2442
-luxembourg,united arab emirates,2444
-luxembourg,united states,2446
-malawi,kenya,2448
-malaysia,china,2450
-malaysia,singapore,2452
-malaysia,united arab emirates,2454
-malaysia,zambia,2456
-maldives,singapore,2458
-maldives,sri lanka,2460
-maldives,united arab emirates,2462
-malta,cyprus,2464
-mauritius,seychelles,2466
-mauritius,united arab emirates,2468
-mexico,chile,2470
-mexico,colombia,2472
-mexico,ecuador,2474
-mexico,spain,2476
-mexico,united states,2478
-morocco,germany,2480
-morocco,spain,2482
-morocco,united arab emirates,2484
-mozambique,kenya,2486
-myanmar,cambodia,2488
-myanmar,india,2490
-myanmar,united arab emirates,2492
-netherlands,bahrain,2494
-netherlands,belgium,2496
-netherlands,cyprus,2498
-netherlands,denmark,2500
-netherlands,ecuador,2502
-netherlands,egypt,2504
-netherlands,france,2506
-netherlands,germany,2508
-netherlands,greece,2510
-netherlands,lebanon,2512
-netherlands,luxembourg,2514
-netherlands,morocco,2516
-netherlands,norway,2518
-netherlands,oman,2520
-netherlands,saudi arabia,2522
-netherlands,spain,2524
-netherlands,united arab emirates,2526
-netherlands,united kingdom,2528
-netherlands,united states,2530
-new zealand,australia,2532
-new zealand,indonesia,2534
-new zealand,oman,2536
-new zealand,singapore,2538
-new zealand,united arab emirates,2540
-niger,nigeria,2542
-niger,united republic of tanzania,2544
-nigeria,belgium,2546
-nigeria,brazil,2548
-nigeria,denmark,2550
-nigeria,germany,2552
-nigeria,kenya,2554
-nigeria,netherlands,2556
-nigeria,niger,2558
-nigeria,norway,2560
-nigeria,portugal,2562
-nigeria,saudi arabia,2564
-nigeria,spain,2566
-nigeria,united arab emirates,2568
-norway,united arab emirates,2570
-oman,china,2572
-oman,india,2574
-oman,united arab emirates,2576
-pakistan,china,2578
-pakistan,united arab emirates,2580
-philippines,china,2582
-philippines,united arab emirates,2584
-poland,united arab emirates,2586
-portugal,saudi arabia,2588
-portugal,united arab emirates,2590
-portugal,united states,2592
-republic of korea,cambodia,2594
-republic of korea,kazakhstan,2596
-republic of korea,thailand,2598
-republic of korea,united arab emirates,2600
-russian federation,germany,2602
-russian federation,oman,2604
-russian federation,united arab emirates,2606
-russian federation,united states,2608
-sao tome and principe,seychelles,2610
-saudi arabia,bahrain,2612
-saudi arabia,belgium,2614
-saudi arabia,germany,2616
-saudi arabia,kenya,2618
-saudi arabia,spain,2620
-saudi arabia,united arab emirates,2622
-saudi arabia,united kingdom,2624
-saudi arabia,united states,2626
-senegal,algeria,2628
-senegal,brazil,2630
-senegal,germany,2632
-senegal,guinea,2634
-senegal,morocco,2636
-senegal,norway,2638
-senegal,sierra leone,2640
-senegal,spain,2642
-senegal,united arab emirates,2644
-seychelles,thailand,2646
-seychelles,united arab emirates,2648
-sierra leone,germany,2650
-singapore,australia,2652
-singapore,china,2654
-singapore,malaysia,2656
-singapore,new zealand,2658
-singapore,russian federation,2660
-singapore,united arab emirates,2662
-south africa,nigeria,2664
-south africa,oman,2666
-south africa,united arab emirates,2668
-spain,algeria,2670
-spain,greece,2672
-spain,mexico,2674
-spain,netherlands,2676
-spain,saudi arabia,2678
-spain,tunisia,2680
-spain,united arab emirates,2682
-spain,united kingdom,2684
-spain,united states,2686
-sri lanka,australia,2688
-sri lanka,maldives,2690
-sri lanka,united arab emirates,2692
-sudan,ethiopia,2694
-sudan,kenya,2696
-sudan,saudi arabia,2698
-sudan,united arab emirates,2700
-sweden,united arab emirates,2702
-switzerland,italy,2704
-switzerland,united arab emirates,2706
-tajikistan,china,2708
-thailand,australia,2710
-thailand,cambodia,2712
-thailand,china,2714
-thailand,india,2716
-thailand,myanmar,2718
-thailand,republic of korea,2720
-thailand,united arab emirates,2722
-togo,nigeria,2724
-tunisia,united arab emirates,2726
-türkiye,united arab emirates,2728
-türkiye,united kingdom,2730
-uganda,united arab emirates,2732
-united arab emirates,afghanistan,2734
-united arab emirates,algeria,2736
-united arab emirates,angola,2738
-united arab emirates,australia,2740
-united arab emirates,austria,2742
-united arab emirates,bahrain,2744
-united arab emirates,bangladesh,2746
-united arab emirates,belgium,2748
-united arab emirates,benin,2750
-united arab emirates,brazil,2752
-united arab emirates,brunei darussalam,2754
-united arab emirates,burkina faso,2756
-united arab emirates,burundi,2758
-united arab emirates,cameroon,2760
-united arab emirates,canada,2762
-united arab emirates,china,2764
-united arab emirates,congo,2766
-united arab emirates,croatia,2770
-united arab emirates,cyprus,2772
-united arab emirates,czechia,2774
-united arab emirates,côte d'ivoire,2768
-united arab emirates,denmark,2776
-united arab emirates,djibouti,2778
-united arab emirates,egypt,2780
-united arab emirates,ethiopia,2782
-united arab emirates,finland,2784
-united arab emirates,france,2786
-united arab emirates,germany,2788
-united arab emirates,ghana,2790
-united arab emirates,greece,2792
-united arab emirates,guinea,2794
-united arab emirates,hungary,2796
-united arab emirates,iceland,2798
-united arab emirates,india,2800
-united arab emirates,indonesia,2802
-united arab emirates,iran (islamic republic of),2808
-united arab emirates,iraq,2804
-united arab emirates,ireland,2806
-united arab emirates,italy,2810
-united arab emirates,japan,2812
-united arab emirates,jordan,2814
-united arab emirates,kazakhstan,2816
-united arab emirates,kenya,2818
-united arab emirates,kuwait,2820
-united arab emirates,lebanon,2822
-united arab emirates,luxembourg,2824
-united arab emirates,malawi,2826
-united arab emirates,malaysia,2828
-united arab emirates,maldives,2830
-united arab emirates,mauritius,2832
-united arab emirates,morocco,2834
-united arab emirates,mozambique,2836
-united arab emirates,myanmar,2838
-united arab emirates,netherlands,2840
-united arab emirates,new zealand,2842
-united arab emirates,nigeria,2844
-united arab emirates,norway,2846
-united arab emirates,oman,2848
-united arab emirates,pakistan,2850
-united arab emirates,philippines,2852
-united arab emirates,poland,2854
-united arab emirates,portugal,2856
-united arab emirates,republic of korea,2858
-united arab emirates,russian federation,2860
-united arab emirates,sao tome and principe,2862
-united arab emirates,saudi arabia,2864
-united arab emirates,senegal,2866
-united arab emirates,seychelles,2868
-united arab emirates,singapore,2870
-united arab emirates,south africa,2872
-united arab emirates,spain,2874
-united arab emirates,sri lanka,2876
-united arab emirates,sudan,2878
-united arab emirates,sweden,2880
-united arab emirates,switzerland,2882
-united arab emirates,tajikistan,2884
-united arab emirates,thailand,2886
-united arab emirates,togo,2888
-united arab emirates,tunisia,2890
-united arab emirates,türkiye,2892
-united arab emirates,uganda,2894
-united arab emirates,united kingdom,2896
-united arab emirates,united republic of tanzania,2898
-united arab emirates,united states,2900
-united arab emirates,viet nam,2902
-united arab emirates,zambia,2904
-united arab emirates,zimbabwe,2906
-united kingdom,bahrain,2908
-united kingdom,cyprus,2910
-united kingdom,germany,2912
-united kingdom,greece,2914
-united kingdom,ireland,2916
-united kingdom,italy,2918
-united kingdom,norway,2920
-united kingdom,oman,2922
-united kingdom,saudi arabia,2924
-united kingdom,spain,2926
-united kingdom,united arab emirates,2928
-united kingdom,united states,2930
-united republic of tanzania,kenya,2932
-united republic of tanzania,south africa,2934
-united republic of tanzania,united arab emirates,2936
-united states,australia,2938
-united states,austria,2940
-united states,belgium,2942
-united states,bulgaria,2944
-united states,canada,2946
-united states,denmark,2948
-united states,ecuador,2950
-united states,france,2952
-united states,germany,2954
-united states,greece,2956
-united states,italy,2958
-united states,kuwait,2960
-united states,mexico,2962
-united states,netherlands,2964
-united states,norway,2966
-united states,oman,2968
-united states,poland,2970
-united states,russian federation,2972
-united states,saudi arabia,2974
-united states,spain,2976
-united states,switzerland,2978
-united states,united arab emirates,2980
-united states,united kingdom,2982
-viet nam,australia,2984
-viet nam,philippines,2986
-viet nam,united arab emirates,2988
-zambia,kenya,2990
-zambia,united arab emirates,2992
-zambia,zimbabwe,2994
-zimbabwe,united arab emirates,2996
-zimbabwe,zambia,2998
+afghanistan,china,1054
+afghanistan,pakistan,512
+afghanistan,united arab emirates,2223
+albania,montenegro,322
+algeria,angola,656
+algeria,morocco,323
+algeria,spain,1380
+algeria,united arab emirates,2039
+angola,cabo verde,658
+angola,democratic republic of the congo,659
+angola,italy,660
+angola,morocco,661
+angola,russian federation,662
+angola,senegal,1058
+angola,seychelles,663
+angola,spain,664
+angola,switzerland,665
+angola,united arab emirates,1725
+antigua and barbuda,saint kitts and nevis,326
+argentina,brazil,1060
+argentina,uruguay,327
+armenia,austria,667
+armenia,united arab emirates,1182
+australia,china,328
+australia,indonesia,1061
+australia,malaysia,1062
+australia,new zealand,1063
+australia,oman,1064
+australia,singapore,1065
+australia,thailand,1066
+australia,united arab emirates,2135
+australia,united states,1069
+australia,viet nam,1070
+austria,armenia,669
+austria,egypt,670
+austria,germany,671
+austria,greece,712
+austria,iraq,41
+austria,italy,673
+austria,malta,674
+austria,morocco,675
+austria,qatar,42
+austria,sweden,43
+austria,switzerland,38
+austria,united arab emirates,1747
+austria,united kingdom,1111
+azerbaijan,georgia,45
+azerbaijan,iran (islamic republic of),515
+azerbaijan,italy,375
+azerbaijan,romania,330
+azerbaijan,russian federation,677
+azerbaijan,türkiye,47
+azerbaijan,united arab emirates,1569
+azerbaijan,uzbekistan,332
+bahrain,germany,333
+bahrain,italy,1073
+bahrain,kuwait,679
+bahrain,pakistan,680
+bahrain,saudi arabia,1755
+bahrain,switzerland,682
+bahrain,united arab emirates,2658
+bangladesh,china,1594
+bangladesh,india,1077
+bangladesh,united arab emirates,1597
+belarus,ukraine,335
+belarus,united arab emirates,1020
+belgium,czechia,1079
+belgium,iraq,48
+belgium,norway,1080
+belgium,spain,1081
+belgium,united arab emirates,2104
+belgium,united kingdom,1024
+belgium,united states,1083
+benin,germany,687
+benin,niger,688
+benin,nigeria,1084
+bosnia and herzegovina,greece,339
+bosnia and herzegovina,kuwait,520
+bosnia and herzegovina,montenegro,340
+bosnia and herzegovina,united arab emirates,862
+bosnia and herzegovina,united kingdom,342
+botswana,türkiye,50
+botswana,uganda,51
+botswana,zimbabwe,689
+brazil,argentina,1085
+brazil,chile,1086
+brazil,colombia,1087
+brazil,ecuador,1088
+brazil,saudi arabia,1089
+brazil,united arab emirates,1090
+brunei darussalam,china,1091
+bulgaria,romania,522
+bulgaria,united arab emirates,2305
+burkina faso,ghana,1093
+burkina faso,senegal,1094
+burkina faso,united arab emirates,691
+burundi,kenya,1095
+cabo verde,democratic republic of the congo,692
+cabo verde,united states,693
+cambodia,china,1096
+cambodia,myanmar,1097
+cambodia,thailand,1098
+cambodia,united arab emirates,1998
+cameroon,ghana,1100
+cameroon,nigeria,1101
+canada,china,1102
+canada,united arab emirates,1103
+canada,united kingdom,1447
+canada,united states,344
+chad,egypt,695
+chad,united arab emirates,291
+chile,brazil,1105
+chile,senegal,1106
+china,bangladesh,1631
+china,india,1108
+china,japan,696
+china,kazakhstan,67
+china,malaysia,697
+china,oman,1109
+china,republic of korea,1109
+china,saudi arabia,68
+china,thailand,1110
+china,united arab emirates,2221
+colombia,ecuador,1112
+colombia,united states,1113
+comoros,united arab emirates,700
+comoros,zambia,701
+congo,angola,1114
+congo,united arab emirates,702
+congo,united republic of tanzania,54
+croatia,greece,154
+croatia,united arab emirates,1642
+cuba,spain,703
+cyprus,malta,1118
+cyprus,united arab emirates,1823
+czechia,spain,69
+czechia,ukraine,526
+czechia,united arab emirates,1647
+czechia,united kingdom,1121
+côte d'ivoire,germany,1115
+côte d'ivoire,ghana,1116
+democratic republic of the congo,angola,705
+democratic republic of the congo,lebanon,706
+democratic republic of the congo,russian federation,707
+democratic republic of the congo,senegal,708
+democratic republic of the congo,spain,709
+democratic republic of the congo,uganda,528
+democratic republic of the congo,united arab emirates,762
+democratic republic of the congo,united republic of tanzania,764
+democratic republic of the congo,zimbabwe,712
+denmark,austria,1122
+denmark,bahrain,1123
+denmark,germany,1124
+denmark,kuwait,1125
+denmark,senegal,1126
+denmark,united arab emirates,1207
+denmark,united kingdom,347
+denmark,united states,1128
+djibouti,ethiopia,1129
+djibouti,kenya,1130
+djibouti,saudi arabia,1131
+djibouti,somalia,529
+djibouti,sudan,1132
+djibouti,united arab emirates,1663
+ecuador,mexico,1134
+ecuador,netherlands,1135
+ecuador,united states,1217
+egypt,austria,713
+egypt,eritrea,714
+egypt,france,85
+egypt,germany,1936
+egypt,hungary,87
+egypt,ireland,88
+egypt,italy,348
+egypt,jordan,89
+egypt,kuwait,716
+egypt,lebanon,90
+egypt,malta,717
+egypt,morocco,718
+egypt,netherlands,1138
+egypt,russian federation,719
+egypt,saudi arabia,811
+egypt,türkiye,92
+egypt,united arab emirates,2823
+egypt,united kingdom,808
+egypt,united republic of tanzania,723
+eritrea,egypt,724
+eritrea,ethiopia,725
+eritrea,saudi arabia,1258
+eritrea,sudan,727
+eritrea,switzerland,728
+eritrea,united arab emirates,1262
+estonia,iraq,82
+ethiopia,eritrea,730
+ethiopia,kenya,1871
+ethiopia,rwanda,103
+ethiopia,saudi arabia,1141
+ethiopia,united arab emirates,2408
+ethiopia,zimbabwe,733
+finland,germany,350
+finland,russian federation,1143
+finland,united arab emirates,886
+france,austria,1144
+france,congo,734
+france,germany,1251
+france,greece,735
+france,iraq,109
+france,italy,1608
+france,kuwait,111
+france,morocco,736
+france,niger,1147
+france,norway,112
+france,poland,113
+france,qatar,114
+france,russian federation,115
+france,saudi arabia,853
+france,spain,107
+france,switzerland,1196
+france,türkiye,117
+france,united arab emirates,2345
+france,united kingdom,1203
+france,zimbabwe,741
+gambia,saudi arabia,742
+gambia,united arab emirates,743
+georgia,azerbaijan,138
+georgia,russian federation,536
+georgia,united arab emirates,537
+germany,austria,71
+germany,bahrain,1149
+germany,denmark,1150
+germany,france,74
+germany,iraq,75
+germany,ireland,1151
+germany,kuwait,76
+germany,malta,821
+germany,mexico,1152
+germany,morocco,745
+germany,netherlands,1153
+germany,qatar,78
+germany,saudi arabia,1233
+germany,spain,1228
+germany,switzerland,2330
+germany,united arab emirates,2331
+germany,united kingdom,1906
+ghana,brazil,1159
+ghana,côte d'ivoire,1160
+ghana,germany,1161
+ghana,spain,1162
+ghana,tunisia,140
+ghana,united arab emirates,1302
+greece,austria,142
+greece,croatia,147
+greece,egypt,358
+greece,france,894
+greece,germany,1307
+greece,iraq,148
+greece,italy,149
+greece,kuwait,150
+greece,malta,750
+greece,montenegro,359
+greece,nigeria,1165
+greece,saudi arabia,902
+greece,spain,144
+greece,türkiye,305
+greece,united arab emirates,2419
+greece,united kingdom,2066
+greece,united states,1168
+guinea,liberia,754
+guinea,senegal,1169
+hungary,ireland,157
+hungary,united arab emirates,2080
+hungary,united kingdom,912
+iceland,france,185
+iceland,jordan,538
+iceland,united arab emirates,757
+iceland,united kingdom,758
+iceland,united states,1930
+india,bangladesh,539
+india,china,1172
+india,denmark,1173
+india,japan,2295
+india,maldives,1175
+india,nepal,540
+india,oman,541
+india,republic of korea,1123
+india,seychelles,762
+india,thailand,1176
+india,united arab emirates,3006
+india,united republic of tanzania,162
+india,zimbabwe,764
+indonesia,australia,1178
+indonesia,india,1179
+indonesia,new zealand,1180
+indonesia,saudi arabia,158
+indonesia,singapore,1946
+indonesia,united arab emirates,1948
+iran (islamic republic of),iraq,184
+iran (islamic republic of),united arab emirates,2503
+iran (islamic republic of) ,united arab emirates,364
+iraq,austria,165
+iraq,bahrain,1312
+iraq,belgium,1349
+iraq,cyprus,1184
+iraq,denmark,1185
+iraq,estonia,168
+iraq,france,170
+iraq,germany,1353
+iraq,ghana,172
+iraq,greece,173
+iraq,iran (islamic republic of),175
+iraq,ireland,174
+iraq,italy,176
+iraq,jordan,177
+iraq,kuwait,769
+iraq,lebanon,949
+iraq,netherlands,1187
+iraq,norway,1188
+iraq,republic of korea,178
+iraq,russian federation,180
+iraq,saudi arabia,952
+iraq,spain,1358
+iraq,sweden,182
+iraq,türkiye,183
+iraq,united arab emirates,2062
+iraq,united kingdom,171
+ireland,austria,772
+ireland,iraq,159
+ireland,spain,546
+ireland,united arab emirates,2876
+ireland,united kingdom,1558
+ireland,united states,1301
+italy,azerbaijan,187
+italy,bahrain,1194
+italy,bosnia and herzegovina,368
+italy,egypt,369
+italy,france,2159
+italy,greece,191
+italy,malta,968
+italy,montenegro,370
+italy,portugal,193
+italy,qatar,194
+italy,saudi arabia,195
+italy,switzerland,1755
+italy,united arab emirates,3080
+italy,united kingdom,2539
+italy,united states,1978
+japan,cambodia,201
+japan,china,1400
+japan,india,780
+japan,indonesia,781
+japan,malaysia,782
+japan,oman,1201
+japan,republic of korea,374
+japan,sri lanka,783
+japan,thailand,784
+japan,united arab emirates,1577
+japan,united kingdom,376
+japan,viet nam,1203
+jordan,eritrea,785
+jordan,germany,1204
+jordan,iraq,983
+jordan,russian federation,198
+jordan,saudi arabia,2191
+jordan,spain,1206
+jordan,united arab emirates,3117
+kazakhstan,china,789
+kazakhstan,kuwait,221
+kazakhstan,kyrgyzstan,550
+kazakhstan,republic of korea,1208
+kazakhstan,switzerland,790
+kazakhstan,united arab emirates,2771
+kenya,belgium,1210
+kenya,india,202
+kenya,netherlands,1211
+kenya,nigeria,203
+kenya,saudi arabia,1212
+kenya,seychelles,1213
+kenya,singapore,1214
+kenya,uganda,2007
+kenya,united arab emirates,1216
+kuwait,angola,793
+kuwait,bahrain,794
+kuwait,egypt,795
+kuwait,finland,552
+kuwait,france,214
+kuwait,germany,212
+kuwait,hungary,1217
+kuwait,iraq,2014
+kuwait,jordan,797
+kuwait,lebanon,215
+kuwait,oman,216
+kuwait,saudi arabia,1015
+kuwait,spain,213
+kuwait,sudan,799
+kuwait,switzerland,211
+kuwait,thailand,218
+kuwait,türkiye,219
+kuwait,united arab emirates,2991
+kyrgyzstan,iraq,204
+kyrgyzstan,kazakhstan,554
+kyrgyzstan,united arab emirates,933
+kyrgyzstan,uzbekistan,379
+lao people's democratic republic,philippines,801
+lebanon,bahrain,1220
+lebanon,egypt,224
+lebanon,iraq,225
+lebanon,kuwait,226
+lebanon,oman,802
+lebanon,qatar,227
+lebanon,switzerland,223
+lebanon,türkiye,228
+lebanon,united arab emirates,2802
+liberia,guinea,804
+liberia,sierra leone,805
+libya,malta,806
+libya,russian federation,807
+libya,united arab emirates,808
+luxembourg,switzerland,380
+luxembourg,united arab emirates,1222
+luxembourg,united states,1223
+madagascar,united arab emirates,809
+malawi,kenya,1224
+malaysia,china,1225
+malaysia,japan,810
+malaysia,republic of korea,811
+malaysia,singapore,1226
+malaysia,thailand,812
+malaysia,united arab emirates,2040
+malaysia,zambia,1228
+maldives,eritrea,814
+maldives,ethiopia,815
+maldives,saudi arabia,239
+maldives,seychelles,816
+maldives,singapore,1229
+maldives,sri lanka,1230
+maldives,united arab emirates,2667
+mali,united arab emirates,231
+malta,austria,818
+malta,cyprus,1232
+malta,egypt,819
+malta,greece,1054
+malta,iraq,235
+malta,ireland,821
+malta,italy,236
+malta,libya,822
+malta,morocco,823
+malta,saudi arabia,237
+malta,serbia,824
+malta,united arab emirates,1057
+malta,united kingdom,1059
+mauritania,sudan,382
+mauritania,united arab emirates,827
+mauritius,seychelles,1233
+mauritius,united arab emirates,2062
+mauritius,united kingdom,383
+mexico,chile,1235
+mexico,colombia,1236
+mexico,ecuador,1237
+mexico,spain,1238
+mexico,united kingdom,829
+mexico,united states,1239
+mongolia,united arab emirates,384
+mongolia,united kingdom,385
+montenegro,albania,386
+montenegro,bosnia and herzegovina,946
+montenegro,italy,388
+montenegro,luxembourg,389
+montenegro,morocco,390
+montenegro,serbia,391
+montenegro,united arab emirates,1782
+montenegro,united kingdom,393
+morocco,algeria,1225
+morocco,france,229
+morocco,germany,2072
+morocco,italy,833
+morocco,jordan,834
+morocco,malta,835
+morocco,rwanda,395
+morocco,saudi arabia,230
+morocco,spain,2077
+morocco,switzerland,837
+morocco,united arab emirates,2476
+morocco,united kingdom,1236
+mozambique,kenya,1243
+mozambique,united arab emirates,398
+mozambique,zimbabwe,840
+myanmar,cambodia,1244
+myanmar,india,1245
+myanmar,thailand,561
+myanmar,united arab emirates,1808
+namibia,botswana,241
+namibia,united arab emirates,240
+namibia,zimbabwe,841
+nepal,india,563
+nepal,united arab emirates,564
+netherlands,bahrain,1247
+netherlands,belgium,1248
+netherlands,cyprus,1249
+netherlands,denmark,1250
+netherlands,ecuador,1251
+netherlands,egypt,1252
+netherlands,france,1253
+netherlands,germany,1254
+netherlands,greece,1255
+netherlands,lebanon,1256
+netherlands,luxembourg,1257
+netherlands,morocco,1258
+netherlands,norway,1259
+netherlands,oman,1260
+netherlands,saudi arabia,1261
+netherlands,spain,1262
+netherlands,united arab emirates,1506
+netherlands,united kingdom,1508
+netherlands,united states,1510
+new zealand,australia,1665
+new zealand,indonesia,1267
+new zealand,oman,1268
+new zealand,singapore,1269
+new zealand,united arab emirates,1270
+niger,benin,842
+niger,germany,843
+niger,nigeria,1271
+niger,united republic of tanzania,1272
+niger,zimbabwe,844
+nigeria,belgium,1273
+nigeria,brazil,1274
+nigeria,denmark,1275
+nigeria,germany,1276
+nigeria,ghana,242
+nigeria,kenya,1277
+nigeria,netherlands,1278
+nigeria,niger,1279
+nigeria,norway,1280
+nigeria,portugal,1281
+nigeria,saudi arabia,1282
+nigeria,spain,1283
+nigeria,united arab emirates,1284
+north macedonia,united arab emirates,557
+norway,denmark,246
+norway,united arab emirates,1285
+oman,china,1286
+oman,india,1287
+oman,jordan,845
+oman,mauritius,846
+oman,uganda,565
+oman,united arab emirates,3348
+pakistan,bahrain,848
+pakistan,china,1289
+pakistan,qatar,248
+pakistan,türkiye,249
+pakistan,united arab emirates,3107
+pakistan,uzbekistan,402
+philippines,china,1291
+philippines,malaysia,850
+philippines,united arab emirates,1292
+poland,spain,250
+poland,united arab emirates,1861
+portugal,cuba,851
+portugal,saudi arabia,1294
+portugal,united arab emirates,1295
+portugal,united kingdom,403
+portugal,united states,1547
+qatar,austria,252
+qatar,france,253
+qatar,italy,255
+qatar,lebanon,256
+qatar,pakistan,257
+qatar,türkiye,258
+qatar,united kingdom,254
+republic of korea,cambodia,1297
+republic of korea,china,852
+republic of korea,india,1257
+republic of korea,japan,1465
+republic of korea,kazakhstan,2153
+republic of korea,kyrgyzstan,207
+republic of korea,singapore,856
+republic of korea,thailand,1299
+republic of korea,united arab emirates,1300
+republic of korea,united kingdom,406
+republic of korea,uzbekistan,208
+republic of moldova ,ukraine,558
+romania,united arab emirates,1426
+romania,united kingdom,407
+russian federation,angola,858
+russian federation,azerbaijan,859
+russian federation,germany,1301
+russian federation,iraq,262
+russian federation,jordan,263
+russian federation,libya,860
+russian federation,netherlands,264
+russian federation,oman,1302
+russian federation,serbia,861
+russian federation,spain,261
+russian federation,sudan,862
+russian federation,united arab emirates,3404
+russian federation,united kingdom,409
+russian federation,united states,1304
+rwanda,chad,265
+rwanda,united arab emirates,410
+rwanda,zimbabwe,1275
+saint kitts and nevis,montenegro,412
+sao tome and principe,seychelles,1305
+saudi arabia,argentina,413
+saudi arabia,bahrain,2171
+saudi arabia,belgium,1307
+saudi arabia,china,269
+saudi arabia,egypt,1137
+saudi arabia,france,1139
+saudi arabia,gambia,868
+saudi arabia,germany,1578
+saudi arabia,greece,1143
+saudi arabia,iceland,276
+saudi arabia,iraq,1145
+saudi arabia,italy,277
+saudi arabia,jordan,278
+saudi arabia,kenya,1588
+saudi arabia,kuwait,1151
+saudi arabia,lebanon,872
+saudi arabia,maldives,283
+saudi arabia,malta,282
+saudi arabia,morocco,281
+saudi arabia,singapore,284
+saudi arabia,spain,2183
+saudi arabia,switzerland,1142
+saudi arabia,türkiye,285
+saudi arabia,united arab emirates,3704
+saudi arabia,united kingdom,2461
+saudi arabia,united states,1313
+senegal,algeria,1314
+senegal,brazil,1315
+senegal,germany,1316
+senegal,guinea,1317
+senegal,mauritania,415
+senegal,morocco,1318
+senegal,norway,1319
+senegal,sierra leone,1320
+senegal,spain,1321
+senegal,united arab emirates,1322
+serbia,bosnia and herzegovina,572
+serbia,germany,877
+serbia,greece,878
+serbia,romania,573
+serbia,united arab emirates,1869
+serbia,united kingdom,259
+seychelles,angola,880
+seychelles,india,881
+seychelles,maldives,882
+seychelles,thailand,2206
+seychelles,united arab emirates,2625
+seychelles,zimbabwe,885
+sierra leone,germany,1325
+sierra leone,saudi arabia,886
+sierra leone,united arab emirates,887
+singapore,australia,1326
+singapore,china,1327
+singapore,indonesia,288
+singapore,malaysia,1328
+singapore,new zealand,1329
+singapore,russian federation,1330
+singapore,seychelles,888
+singapore,thailand,889
+singapore,united arab emirates,2639
+slovakia,ireland,575
+slovakia,united arab emirates,576
+somalia,ethiopia,1180
+somalia,oman,577
+somalia,united arab emirates,1470
+somalia,zimbabwe,290
+south africa,nigeria,1332
+south africa,oman,1333
+south africa,united arab emirates,1334
+south africa,united republic of tanzania,419
+south africa,zimbabwe,893
+south sudan,united arab emirates,579
+spain,algeria,1755
+spain,angola,894
+spain,egypt,95
+spain,france,96
+spain,greece,1336
+spain,iraq,98
+spain,ireland,580
+spain,italy,895
+spain,jordan,99
+spain,lebanon,100
+spain,mexico,1337
+spain,morocco,896
+spain,netherlands,1338
+spain,portugal,897
+spain,russian federation,101
+spain,saudi arabia,1339
+spain,switzerland,992
+spain,tunisia,1340
+spain,türkiye,102
+spain,united arab emirates,2754
+spain,united kingdom,2761
+spain,united states,2244
+sri lanka,australia,1344
+sri lanka,democratic republic of the congo,902
+sri lanka,maldives,1345
+sri lanka,thailand,903
+sri lanka,united arab emirates,2831
+sri lanka,zimbabwe,905
+sudan,eritrea,1488
+sudan,ethiopia,1347
+sudan,kenya,1348
+sudan,liberia,907
+sudan,saudi arabia,1932
+sudan,senegal,423
+sudan,uganda,908
+sudan,united arab emirates,3267
+sudan,zimbabwe,910
+sweden,germany,286
+sweden,united arab emirates,1776
+sweden,united kingdom,713
+switzerland,angola,911
+switzerland,azerbaijan,56
+switzerland,belarus,427
+switzerland,france,1397
+switzerland,germany,429
+switzerland,greece,59
+switzerland,ireland,913
+switzerland,italy,1782
+switzerland,kuwait,60
+switzerland,lebanon,61
+switzerland,malta,914
+switzerland,montenegro,431
+switzerland,morocco,977
+switzerland,russian federation,63
+switzerland,saudi arabia,980
+switzerland,spain,917
+switzerland,united arab emirates,2758
+switzerland,united kingdom,1410
+switzerland,united states,920
+tajikistan,china,1354
+tajikistan,united arab emirates,585
+thailand,australia,1355
+thailand,cambodia,1356
+thailand,china,2278
+thailand,india,1358
+thailand,japan,292
+thailand,malaysia,922
+thailand,myanmar,1948
+thailand,republic of korea,1360
+thailand,sri lanka,923
+thailand,united arab emirates,2719
+togo,nigeria,1362
+tunisia,iraq,293
+tunisia,united arab emirates,2288
+turkmenistan,united arab emirates,1518
+türkiye,azerbaijan,295
+türkiye,france,299
+türkiye,georgia,300
+türkiye,germany,298
+türkiye,greece,301
+türkiye,iraq,302
+türkiye,italy,303
+türkiye,kuwait,304
+türkiye,qatar,305
+türkiye,russian federation,306
+türkiye,switzerland,593
+türkiye,united arab emirates,3174
+türkiye,united kingdom,1365
+uganda,democratic republic of the congo,592
+uganda,djibouti,593
+uganda,france,928
+uganda,sudan,929
+uganda,united arab emirates,3203
+uganda,united republic of tanzania,931
+uganda,united republic of tanzania ,594
+uganda,zambia,313
+ukraine,czechia,310
+ukraine,jordan,596
+ukraine,spain,311
+ukraine,türkiye,597
+ukraine,united arab emirates,1033
+united arab emirates,afghanistan,2898
+united arab emirates,algeria,2737
+united arab emirates,angola,2303
+united arab emirates,armenia,1535
+united arab emirates,australia,1807
+united arab emirates,austria,2308
+united arab emirates,azerbaijan,1978
+united arab emirates,bahrain,3354
+united arab emirates,bangladesh,1976
+united arab emirates,belarus,939
+united arab emirates,belgium,1814
+united arab emirates,benin,1375
+united arab emirates,bosnia and herzegovina,1045
+united arab emirates,brazil,1376
+united arab emirates,brunei darussalam,1377
+united arab emirates,bulgaria,1545
+united arab emirates,burkina faso,2319
+united arab emirates,burundi,1379
+united arab emirates,cambodia,942
+united arab emirates,cameroon,1380
+united arab emirates,canada,1823
+united arab emirates,chad,943
+united arab emirates,china,2769
+united arab emirates,comoros,945
+united arab emirates,congo,2334
+united arab emirates,croatia,1991
+united arab emirates,cyprus,2333
+united arab emirates,czechia,1994
+united arab emirates,côte d'ivoire,1384
+united arab emirates,democratic republic of the congo,952
+united arab emirates,denmark,1832
+united arab emirates,djibouti,1997
+united arab emirates,egypt,3401
+united arab emirates,eritrea,1560
+united arab emirates,ethiopia,2953
+united arab emirates,finland,2450
+united arab emirates,france,2813
+united arab emirates,gambia,953
+united arab emirates,georgia,613
+united arab emirates,germany,2803
+united arab emirates,ghana,1395
+united arab emirates,greece,1409
+united arab emirates,guinea,1397
+united arab emirates,hungary,2367
+united arab emirates,iceland,2355
+united arab emirates,india,3436
+united arab emirates,indonesia,2359
+united arab emirates,iran (islamic republic of),2978
+united arab emirates,iran (islamic republic of) ,450
+united arab emirates,iraq,2995
+united arab emirates,ireland,3447
+united arab emirates,italy,3455
+united arab emirates,japan,2842
+united arab emirates,jordan,3463
+united arab emirates,kazakhstan,3017
+united arab emirates,kenya,1430
+united arab emirates,kuwait,3020
+united arab emirates,kyrgyzstan,1077
+united arab emirates,lao people's democratic republic,967
+united arab emirates,lebanon,2034
+united arab emirates,libya,968
+united arab emirates,luxembourg,1412
+united arab emirates,madagascar,969
+united arab emirates,malawi,1413
+united arab emirates,malaysia,2384
+united arab emirates,maldives,2869
+united arab emirates,mali,25
+united arab emirates,malta,998
+united arab emirates,mauritania,973
+united arab emirates,mauritius,2847
+united arab emirates,mongolia,458
+united arab emirates,montenegro,2060
+united arab emirates,morocco,2853
+united arab emirates,mozambique,1879
+united arab emirates,myanmar,2046
+united arab emirates,namibia,28
+united arab emirates,nepal,628
+united arab emirates,netherlands,1420
+united arab emirates,new zealand,1883
+united arab emirates,niger,977
+united arab emirates,nigeria,1422
+united arab emirates,north macedonia,624
+united arab emirates,norway,1423
+united arab emirates,oman,3494
+united arab emirates,pakistan,3498
+united arab emirates,philippines,1426
+united arab emirates,poland,2058
+united arab emirates,portugal,1428
+united arab emirates,republic of korea,2896
+united arab emirates,republic of moldova ,625
+united arab emirates,romania,1613
+united arab emirates,russian federation,3541
+united arab emirates,rwanda,467
+united arab emirates,sao tome and principe,1431
+united arab emirates,saudi arabia,3580
+united arab emirates,senegal,1433
+united arab emirates,serbia,1648
+united arab emirates,seychelles,2888
+united arab emirates,sierra leone,986
+united arab emirates,singapore,2925
+united arab emirates,slovakia,636
+united arab emirates,somalia,1659
+united arab emirates,south africa,1907
+united arab emirates,south sudan,638
+united arab emirates,spain,3546
+united arab emirates,sri lanka,3068
+united arab emirates,sudan,3544
+united arab emirates,sweden,1914
+united arab emirates,switzerland,2914
+united arab emirates,tajikistan,2084
+united arab emirates,thailand,2912
+united arab emirates,togo,1444
+united arab emirates,tunisia,2439
+united arab emirates,turkmenistan,1641
+united arab emirates,türkiye,3120
+united arab emirates,uganda,3127
+united arab emirates,ukraine,683
+united arab emirates,united kingdom,2935
+united arab emirates,united republic of tanzania,2448
+united arab emirates,united republic of tanzania ,643
+united arab emirates,united states,1928
+united arab emirates,uzbekistan,2127
+united arab emirates,viet nam,2932
+united arab emirates,yemen,1002
+united arab emirates,zambia,1452
+united arab emirates,zimbabwe,2937
+united kingdom,antigua and barbuda,482
+united kingdom,austria,1123
+united kingdom,bahrain,1454
+united kingdom,belarus,483
+united kingdom,belgium,1005
+united kingdom,bosnia and herzegovina,484
+united kingdom,canada,485
+united kingdom,cyprus,1455
+united kingdom,democratic republic of the congo,1006
+united kingdom,egypt,122
+united kingdom,france,1617
+united kingdom,germany,1577
+united kingdom,greece,2069
+united kingdom,hungary,126
+united kingdom,iceland,1008
+united kingdom,iraq,128
+united kingdom,ireland,2073
+united kingdom,italy,3086
+united kingdom,kazakhstan,1010
+united kingdom,lebanon,130
+united kingdom,malta,1011
+united kingdom,mexico,1012
+united kingdom,montenegro,490
+united kingdom,morocco,1504
+united kingdom,netherlands,131
+united kingdom,norway,1460
+united kingdom,oman,1461
+united kingdom,portugal,492
+united kingdom,qatar,132
+united kingdom,russian federation,133
+united kingdom,saudi arabia,3103
+united kingdom,singapore,494
+united kingdom,spain,3096
+united kingdom,switzerland,1632
+united kingdom,türkiye,135
+united kingdom,united arab emirates,3745
+united kingdom,united states,3254
+united republic of tanzania,botswana,307
+united republic of tanzania,democratic republic of the congo,308
+united republic of tanzania,egypt,309
+united republic of tanzania,india,1019
+united republic of tanzania,kenya,1466
+united republic of tanzania,mauritius,1020
+united republic of tanzania,seychelles,1021
+united republic of tanzania,south africa,1467
+united republic of tanzania,united arab emirates,2989
+united republic of tanzania,zimbabwe,1023
+united republic of tanzania ,bahrain,586
+united republic of tanzania ,uganda,587
+united republic of tanzania ,united arab emirates,588
+united states,australia,1469
+united states,austria,1470
+united states,belgium,1471
+united states,bulgaria,1472
+united states,cabo verde,1024
+united states,canada,1973
+united states,china,314
+united states,denmark,1474
+united states,ecuador,1790
+united states,france,3002
+united states,germany,1477
+united states,greece,1478
+united states,iceland,1676
+united states,ireland,1995
+united states,italy,1797
+united states,kuwait,1480
+united states,mexico,1481
+united states,morocco,1028
+united states,netherlands,1482
+united states,norway,1483
+united states,oman,1484
+united states,poland,1485
+united states,russian federation,1486
+united states,saudi arabia,1487
+united states,spain,2517
+united states,switzerland,3021
+united states,united arab emirates,1993
+united states,united kingdom,3994
+uruguay,united kingdom,505
+uzbekistan,azerbaijan,506
+uzbekistan,kuwait,319
+uzbekistan,kyrgyzstan,1160
+uzbekistan,pakistan,508
+uzbekistan,united arab emirates,2195
+viet nam,australia,1492
+viet nam,indonesia,1033
+viet nam,philippines,1493
+viet nam,united arab emirates,3038
+yemen,eritrea,1035
+yemen,united arab emirates,1036
+zambia,kenya,1495
+zambia,namibia,320
+zambia,united arab emirates,2533
+zambia,zimbabwe,2535
+zimbabwe,botswana,1039
+zimbabwe,egypt,1040
+zimbabwe,gambia,1041
+zimbabwe,india,1042
+zimbabwe,mozambique,1043
+zimbabwe,namibia,1365
+zimbabwe,niger,1045
+zimbabwe,rwanda,1046
+zimbabwe,seychelles,1047
+zimbabwe,south africa,1048
+zimbabwe,switzerland,1049
+zimbabwe,uganda,1050
+zimbabwe,united arab emirates,3060
+zimbabwe,united republic of tanzania,1052
+zimbabwe,zambia,2552

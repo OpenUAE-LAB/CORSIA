@@ -122,8 +122,8 @@ def file_delete(filename):
         if os.path.exists(file_path):
             os.remove(file_path)
         else:
-            return "The file does not exist"
-        return render_template('admin.html')
+            print("The file does not exist")
+    return redirect('/admin')
 
 # Enables admin to delete the uploaded files from the system
 @app.route('/download_file/<filename>', methods = ['GET'])
