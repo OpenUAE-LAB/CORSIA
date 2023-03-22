@@ -39,15 +39,29 @@
         <form method="get" action="file.doc"></form>
         <div class="table-area">
           <table id="table">
+            <colgroup>
+              <col style="width: 5%;">
+              <col style="width: 5%;">
+              <col style="width: 30%;">
+              <col style="width: 15%;">
+              <col style="width: 15%;">
+              <col style="width: 30%;">
+              <col style="width: 8%;">
+              <col style="width: 8%;">
+            </colgroup>
             <thead>
               <tr>
                 <th><input type="checkbox" id="select-all"></th>
                 <th colspan="2">File Name</th>
                 <th>Operator</th>
                 <th>Date</th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th colspan="3">
+                  <div id="search" style="float: left">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                  </div>
+                  <input type="month" id="month_input" class="month_calendar" style="display: none; float: right;" />
+                </th>
+                
               </tr>
             </thead>
             <tbody id="table-body">
