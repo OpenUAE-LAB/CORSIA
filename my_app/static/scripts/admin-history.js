@@ -20,6 +20,21 @@ function deleteFile(button) {
     }
 }
 
+function revertFile(button){
+    const formData = new FormData();
+
+    // GFeeting the name of the file
+    var text = button.parentNode.parentNode.parentNode.cells[2].textContent;
+    var fileName = text.split('.Xlsx')[0];
+    console.log(fileName);
+
+    // Construct the URL for the file download
+    var url = "/revert/" + encodeURIComponent(fileName);
+  
+    // Navigate to the file download URL
+    window.location.href = url;
+}
+
 function downloadFile(button) {
     const formData = new FormData();
 
@@ -91,7 +106,7 @@ function display_files(){
                 trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)"></i></button></td>`;
                 
                 trCell = tr.insertCell(-1);
-                trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-undo" aria-hidden="true"></i></button></td>`;
+                trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-undo" aria-hidden="true" onclick="revertFile(this)"></i></button></td>`;
             }
         })
     } catch (error){
@@ -110,7 +125,6 @@ function createNewCheckbox(name){
 
 document.getElementById('btn').onclick = function() {
     // Collect the name of all the files selected (name format e.g operator1.xlsx is returned)
-    let files = [];
     let formData = new FormData();
     var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked'); // Collects all checked checkboxes
     

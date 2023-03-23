@@ -106,7 +106,65 @@ function createNewCheckbox(name) {
     return checkbox;
 }
 
+document.getElementById('btn').onclick = function() {
+    // Collect the name of all the files selected (name format e.g operator1.xlsx is returned)
+    let formData = new FormData();
+    var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked'); // Collects all checked checkboxes
+    // console.log(markedCheckbox.length == 0);
+    if (markedCheckbox.length !== 0){
+        // Creating a formData with all the files checked
+        for (var checkbox of markedCheckbox) {
+            formData.append('fileslist', checkbox.name);
+        }
 
+        // Displaying a load page
+        filesArea = document.querySelector(".centered")
+        filesArea.innerHTML = `
+        <div class="upload_container">
+            <div class="response_box">
+                <div class="file-area">
+                    </br><div class="load_icon"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                    </br><header>Processing...</header>     
+                </div>
+            </div>
+        </div>`;
+
+
+        // Sending a fetch to combine selected files only
+        setTimeout(function(){
+        try{
+            fetch('/combine_selected', {
+                method: 'POST',
+                body: formData,
+            })
+        } catch (error){
+            console.error(error);
+        }
+        window.location.href='success_admin';
+        }, 2000);
+    }else{
+        alert("ERROR: No files are selected");
+    };
+}
+
+// document.getElementById('btn1').onclick = function(){
+
+//     // Collect the names of all the files selected
+//     let files = [];
+//     let formData = new FormData();
+//     var markedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+//     let link = document.createElement('a');
+//     link.href = '/download_file/';
+
+//     // Creating a formData with all files selected
+//     for (var checkbox of markedCheckboxes){
+//         link.href = '/download_file/' + checkbox.name;
+//         // link.download = checkbox.name;
+//         document.body.appendChild(link);
+//         link.click();
+//         document.body.removeChild(link);
+//     }
+// }
 
 
 display_files();

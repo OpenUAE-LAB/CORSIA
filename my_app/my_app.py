@@ -88,10 +88,14 @@ def retrieve_file_info():
     files = [x.lower() for x in files]
 
     # Read list of files names combined previously and convert to lower for comparison
+    
     aggregated_files_names_path = 'my_app/output/Combined_File_Names.csv'
-    df = pd.read_csv(aggregated_files_names_path)
-    files_list = df['File Names'].to_list()
-    files_list = [x.lower() for x in files_list]
+    if os.path.exists(aggregated_files_names_path):
+        df = pd.read_csv(aggregated_files_names_path)
+        files_list = df['File Names'].to_list()
+        files_list = [x.lower() for x in files_list]
+    else:
+        files_list = []
 
     for file in files:
         if ".xlsx" in file.lower():
@@ -192,6 +196,7 @@ def combine_selected():
 
         # Combining all the operaters flight data
         for file in selected_files:
+            print(operators_path+file)
             file_names.append(file.title())
             df = pd.read_excel(operators_path+file)
             combined = pd.concat([combined, df], ignore_index=True)
@@ -235,7 +240,9 @@ def combine():
 
     # Combining all the operaters flight data
     for file in files:
-        if ".xlsx" in file:
+        print(file)
+        print(".xlsx" in file.lower())
+        if ".xlsx" in file.lower():
             df = pd.read_excel(operators_path+file)
             file_names.append(file.title())
             combined = pd.concat([combined, df], ignore_index=True)
@@ -250,6 +257,8 @@ def combine():
     # Create a DataFrame from the list of file names
     file_names_df = pd.DataFrame(file_names, columns=["File Names"])
 
+    print(file_names)
+
     # Write the aggregated data and the file names to an Excel file
     writer = pd.ExcelWriter(r'my_app/output/Combined.xlsx', engine='xlsxwriter')
     grouped.to_excel(writer, sheet_name='Aggregated Data', index=False)
@@ -261,6 +270,22 @@ def combine():
     grouped.to_csv(r'my_app/output/Combined.csv')
     file_names_df.to_csv(r'my_app/output/Combined_File_Names.csv', index=False, header=True)
     return jsonify({"response": "successfully combined all files"})
+
+@app.route('/revert/<file_name>', methods = ['GET'])
+def revert(file_name):
+    if request.method == 'GET':
+        aggregated_files_names_path = 'my_app/output/Combined_File_Names.csv'
+        if os.path.exists(aggregated_files_names_path):
+            df = pd.read_csv(aggregated_files_names_path)
+            df['File Names'] = df['File Names'].apply(str.lower)
+            file_name = str(file_name + '.xlsx')
+            print(df)
+            df = df[df['File Names'] != file_name.lower()]
+            print(df)
+            df.to_csv(r'my_app/output/Combined_File_Names.csv', index=False, header=True)
+    
+    return redirect('/admin')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
