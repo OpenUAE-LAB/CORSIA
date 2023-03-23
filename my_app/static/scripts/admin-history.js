@@ -108,7 +108,7 @@ function display_files(){
                 trCell.style.setProperty('text-align', 'right');
 
                 trCell = tr.insertCell(-1);
-                trCell.innerHTML = `<td  style="text-align: right !important;"><button class="icon_download_button"><i class="fa fa-undo" aria-hidden="true"></i></button></td>`;
+                trCell.innerHTML = `<td  style="text-align: right !important;"><button class="icon_download_button"><i class="fa fa-undo" aria-hidden="true" onclick="revertFile(this)"></i></button></td>`;
                 trCell.style.setProperty('text-align', 'right');
             }
         })
