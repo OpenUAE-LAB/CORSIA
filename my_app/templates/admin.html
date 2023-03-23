@@ -16,6 +16,7 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
@@ -39,14 +40,27 @@
         <form method="get" action="file.doc"></form>
         <div class="table-area">
           <table id="table">
+            <colgroup>
+              <col style="width: 5%;">
+              <col style="width: 5%;">
+              <col style="width: 30%;">
+              <col style="width: 15%;">
+              <col style="width: 15%;">
+              <col style="width: 25%;">
+              <col style="width: 8%;">
+            </colgroup>
             <thead>
               <tr>
                 <th><input type="checkbox" id="select-all"></th>
                 <th colspan="2">File Name</th>
                 <th>Operator</th>
                 <th>Date</th>
-                <th></th>
-                <th></th>
+                <th colspan="2">
+                  <div id="search" style="float: left">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                  </div>
+                  <input type="month" id="month_input" class="month_calendar" style="display: none; float: right;" />
+                </th>
               </tr>
             </thead>
             <tbody id="table-body">
@@ -104,9 +118,6 @@
         window.location.href = 'success_admin';
       }, 2000);
     }
-
-
-
 
   </script>
 

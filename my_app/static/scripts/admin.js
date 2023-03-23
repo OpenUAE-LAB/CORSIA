@@ -86,10 +86,12 @@ function display_files() {
                 trCell.innerHTML += fInfo['upload_time'];
 
                 trCell = tr.insertCell(-1);
-                trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-arrow-down" aria-hidden="true" onclick="downloadFile(this)"></i></button></td>`;
+                trCell.innerHTML = `<td style="text-align: right !important;"><button class="icon_download_button"><i class="fa fa-arrow-down" aria-hidden="true" onclick="downloadFile(this)"></i></button></td>`;
+                trCell.style.setProperty('text-align', 'right');
 
                 trCell = tr.insertCell(-1);
-                trCell.innerHTML = `<td><button class="icon_download_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)"></i></button></td>`;
+                trCell.innerHTML = `<td style="text-align: right !important;"><button class="icon_download_button"><i class="fa fa-trash" aria-hidden="true" onclick="deleteFile(this)"></i></button></td>`;
+                trCell.style.setProperty('text-align', 'right');
             }
         })
     } catch (error) {
