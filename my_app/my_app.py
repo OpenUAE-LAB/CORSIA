@@ -192,11 +192,9 @@ def combine_selected():
         # Get the list of selected files 
         files_list = request.form
         selected_files = files_list.getlist('fileslist')
-        
 
         # Combining all the operaters flight data
         for file in selected_files:
-            print(operators_path+file)
             file_names.append(file.title())
             df = pd.read_excel(operators_path+file)
             combined = pd.concat([combined, df], ignore_index=True)
@@ -240,8 +238,6 @@ def combine():
 
     # Combining all the operaters flight data
     for file in files:
-        print(file)
-        print(".xlsx" in file.lower())
         if ".xlsx" in file.lower():
             df = pd.read_excel(operators_path+file)
             file_names.append(file.title())
@@ -257,7 +253,6 @@ def combine():
     # Create a DataFrame from the list of file names
     file_names_df = pd.DataFrame(file_names, columns=["File Names"])
 
-    print(file_names)
 
     # Write the aggregated data and the file names to an Excel file
     writer = pd.ExcelWriter(r'my_app/output/Combined.xlsx', engine='xlsxwriter')
@@ -279,9 +274,7 @@ def revert(file_name):
             df = pd.read_csv(aggregated_files_names_path)
             df['File Names'] = df['File Names'].apply(str.lower)
             file_name = str(file_name + '.xlsx')
-            print(df)
             df = df[df['File Names'] != file_name.lower()]
-            print(df)
             df.to_csv(r'my_app/output/Combined_File_Names.csv', index=False, header=True)
     
     return redirect('/admin')

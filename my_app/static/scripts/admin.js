@@ -109,11 +109,12 @@ function createNewCheckbox(name) {
 document.getElementById('btn').onclick = function() {
     // Collect the name of all the files selected (name format e.g operator1.xlsx is returned)
     let formData = new FormData();
-    var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked'); // Collects all checked checkboxes
+    var markedCheckbox = document.querySelectorAll('input[class="ckb"]:checked'); // Collects all checked checkboxes
     // console.log(markedCheckbox.length == 0);
     if (markedCheckbox.length !== 0){
         // Creating a formData with all the files checked
         for (var checkbox of markedCheckbox) {
+            console.log(checkbox.length);
             formData.append('fileslist', checkbox.name);
         }
 
