@@ -8,7 +8,7 @@ import os
 import time
 import shutil
 # from flask_ngrok import run_with_ngrok
-from Validation import excel_validation
+# from Validation import excel_validation
 from xlsxwriter import workbook
 import datetime
 # import zipfile
@@ -401,3 +401,4 @@ def create_app():
 
     if __name__ == "__main__":
         app.run(debug=True)
+        
