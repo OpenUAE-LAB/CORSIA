@@ -219,7 +219,7 @@ def create_app():
 
         for file in files:
             if ".xlsx" in file.lower():
-                file_path = r'my_app/tmp/' + file
+                file_path = r'/tmp/' + file
                 data = datetime.datetime.fromtimestamp(os.path.getctime(file_path))
                 if (file not in files_list): # If file NOT previously aggregated --> Display
                     files_dict[f'{file.title()}'] = {
