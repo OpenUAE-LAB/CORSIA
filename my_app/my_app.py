@@ -281,7 +281,7 @@ def create_app():
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
-            file_path = "my_app/tmp/"+f.filename
+            file_path = "/tmp/"+f.filename
             f.save(file_path)
             err_dict = excel_validation(file_path)
         #   print(err_dict)

@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     selectAllCheckbox.addEventListener("change", (event) => {
         var checkboxes = document.querySelectorAll('#table-body .ckb');
-        console.log(checkboxes);
+        //console.log(checkboxes);
         checkboxes.forEach((checkbox) => {
             checkbox.checked = event.target.checked;
-            console.log('EnteredSelectAll_check');
+            //console.log('EnteredSelectAll_check');
         });
     });
 
@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     dateInput.min = new Date(y - 2, 0, 1).toISOString().split("T")[0];
     dateInput.max = new Date(y + 1, 0, 1).toISOString().split("T")[0];
 
-    console.log(filterIcon);
-    console.log(dateInput);
+    //console.log(filterIcon);
+    //console.log(dateInput);
 
     filterIcon.addEventListener('click', function () {
         console.log("clicked");
