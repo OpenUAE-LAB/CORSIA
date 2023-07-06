@@ -275,7 +275,7 @@ def create_app():
             files_path = '../uploaded_files.zip'
             return send_file(files_path, as_attachment=True)
    
-    # @app.route('/uploader', methods = ['GET', 'POST'])
+    @app.route('/uploader', methods = ['GET', 'POST'])
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
