@@ -274,33 +274,18 @@ def create_app():
             shutil.make_archive('uploaded_files', format='zip', root_dir='my_app/tmp')
             files_path = '../uploaded_files.zip'
             return send_file(files_path, as_attachment=True)
-
-
-    # This is where the application uploads the files to the my_app/tmp/ folder after it confirms they are valid
-    @app.route('/uploader', methods = ['POST'])
+   
+    # @app.route('/uploader', methods = ['GET', 'POST'])
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
             file_path = "my_app/tmp/"+f.filename
             f.save(file_path)
-        #     err_dict = excel_validation(file_path)
-        #     print(err_dict)
-        #     return err_dict
-        return 'success'
-        # elif request.method == 'GET':
-        #     return 'file is ready'
-        
-    # @app.route('/uploader', methods = ['GET', 'POST'])
-    # def upload_file():
-    #     if request.method == 'POST':
-    #         f = request.files['file']
-    #         file_path = "my_app/tmp/"+f.filename
-    #         f.save(file_path)
-    #         err_dict = excel_validation(file_path)
-    #         print(err_dict)
-    #         return err_dict
-    #     elif request.method == 'GET':
-    #         return 'file is ready'
+            err_dict = excel_validation(file_path)
+            print(err_dict)
+            return err_dict
+        elif request.method == 'GET':
+            return 'file is ready'
 
     @app.route('/validate_response', methods=["GET"])
     def validate_response():
