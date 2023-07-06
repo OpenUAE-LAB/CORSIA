@@ -203,7 +203,7 @@ def create_app():
         files_dict = {}
 
         # Read all file in directory and convert to lower for comparison
-        operators_path = r'/tmp/'
+        operators_path = r'my_app/tmp/'
         files = os.listdir(operators_path)
         files = [x.lower() for x in files]
 
@@ -219,7 +219,7 @@ def create_app():
 
         for file in files:
             if ".xlsx" in file.lower():
-                file_path = r'/tmp/' + file
+                file_path = r'my_app/tmp/' + file
                 data = datetime.datetime.fromtimestamp(os.path.getctime(file_path))
                 if (file not in files_list): # If file NOT previously aggregated --> Display
                     files_dict[f'{file.title()}'] = {
@@ -281,10 +281,10 @@ def create_app():
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
-            file_path = "/tmp/"+f.filename
+            file_path = "my_app/tmp/"+f.filename
             f.save(file_path)
             err_dict = excel_validation(file_path)
-        #   print(err_dict)
+            print(err_dict)
             return err_dict
         elif request.method == 'GET':
             return 'file is ready'
