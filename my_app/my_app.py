@@ -203,7 +203,7 @@ def create_app():
         files_dict = {}
 
         # Read all file in directory and convert to lower for comparison
-        operators_path = r'my_app/tmp/'
+        operators_path = r'/tmp/'
         files = os.listdir(operators_path)
         files = [x.lower() for x in files]
 
