@@ -173,7 +173,7 @@ def create_app():
         files_dict = {} 
 
         # Read all file in directory and convert to lower for comparison
-        operators_path = r'my_app/tmp/'
+        operators_path = r'/opt/render/project/src/my_app/tmp/'
         files = os.listdir(operators_path)
         files = [x.lower() for x in files]
 
@@ -186,7 +186,7 @@ def create_app():
         # Constructing a dictionary with information on files to be displayed
         for file in files:
             if ".xlsx" in file:
-                file_path = r'my_app/tmp/' + file
+                file_path = r'/opt/render/project/src/my_app/tmp/' + file
                 data = datetime.datetime.fromtimestamp(os.path.getctime(file_path))
                 if (file in files_list): # If file is previously aggregated --> Display
                     files_dict[f'{file.title()}'] = {
