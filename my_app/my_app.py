@@ -279,7 +279,7 @@ def create_app():
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
-            file_path = "my_app/tmp/"+f.filename
+            file_path = "CORSIA/my_app/tmp/"+f.filename
             f.save(file_path)
             print("file saved?", file_path)
 
