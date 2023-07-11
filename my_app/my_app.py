@@ -275,14 +275,33 @@ def create_app():
             files_path = '../uploaded_files.zip'
             return send_file(files_path, as_attachment=True)
    
+    # @app.route('/uploader', methods = ['GET', 'POST'])
+    # def upload_file():
+    #     if request.method == 'POST':
+    #         f = request.files['file']
+    #         file_path = "/opt/render/project/src/my_app/tmp/"+f.filename
+    #         f.save(file_path)
+    #         print("file saved?", file_path)
+
+    #         # Print the current directory
+    #         current_directory = os.getcwd()
+    #         print("Current directory:", current_directory)
+
+    #         err_dict = excel_validation(file_path)
+    #         print(err_dict)
+    #         return err_dict
+    #     elif request.method == 'GET':
+    #         return 'file is ready'
     @app.route('/uploader', methods = ['GET', 'POST'])
     def upload_file():
         if request.method == 'POST':
             f = request.files['file']
-            file_path = "/opt/render/project/src/my_app/tmp/"+f.filename
+            file_dir = "my_app/tmp/"
+            os.makedirs(file_dir, exist_ok=True)  # Create the directory if it doesn't exist
+            
+            file_path = os.path.join(file_dir, f.filename)
             f.save(file_path)
             print("file saved?", file_path)
-
             # Print the current directory
             current_directory = os.getcwd()
             print("Current directory:", current_directory)
