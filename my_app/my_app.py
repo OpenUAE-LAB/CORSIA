@@ -281,7 +281,7 @@ def create_app():
             f = request.files['file']
             file_path = "my_app/tmp/"+f.filename
             f.save(file_path)
-            print("file saved?")
+            print("file saved?", file_path)
             err_dict = excel_validation(file_path)
             print(err_dict)
             return err_dict
