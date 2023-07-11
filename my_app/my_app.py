@@ -282,6 +282,11 @@ def create_app():
             file_path = "my_app/tmp/"+f.filename
             f.save(file_path)
             print("file saved?", file_path)
+
+            # Print the current directory
+            current_directory = os.getcwd()
+            print("Current directory:", current_directory)
+
             err_dict = excel_validation(file_path)
             print(err_dict)
             return err_dict
